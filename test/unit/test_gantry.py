@@ -209,6 +209,7 @@ def test_start_container(resolv_mock, popen_mock):
 RESOLV_CONF_MOCK = (
     ("nameserver invalid line", []),
     ("""# a comment
+        
 domain foo
 search foo bar
 nameserver 8.8.8.8
